@@ -7,10 +7,7 @@ function call() {
     const ENDPOINT = `https://api.github.com/users/${input.value}`;
     fetch(ENDPOINT)
         .then(response => response.json())
-        .then(data => {
-            console.log(data);
-
-        })
+        .then(data => console.log(data))
 };
 
 button.addEventListener('click', call);
